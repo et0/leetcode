@@ -1,6 +1,6 @@
 package twosum
 
-func TwoSumSlow(nums []int, target int) []int {
+func twoSumSlow(nums []int, target int) []int {
 	len := len(nums)
 
 	for i := 0; i < len; i++ {
@@ -14,7 +14,7 @@ func TwoSumSlow(nums []int, target int) []int {
 	return []int{}
 }
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	maps := make(map[int]int)
 
 	for k, v := range nums {
@@ -26,4 +26,8 @@ func TwoSum(nums []int, target int) []int {
 	}
 
 	return []int{}
+}
+
+func Wrapper(nums []int, target int) []int {
+	return twoSum(nums, target)
 }

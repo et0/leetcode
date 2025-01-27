@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package validparentheses
 
 func isValid(s string) bool {
 	close := map[string]string{")": "(", "}": "{", "]": "["}
@@ -21,6 +19,6 @@ func isValid(s string) bool {
 	return len(stack) == 0
 }
 
-func main() {
-	fmt.Println(isValid("()({[]})[]"))
+func Wrapper(s string) bool {
+	return isValid(s)
 }

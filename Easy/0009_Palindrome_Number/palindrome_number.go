@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package palindromenumber
 
 func isPalindrome(x int) bool {
 	if x < 0 {
@@ -28,6 +24,6 @@ func isPalindrome(x int) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(isPalindrome(123421))
+func Wrapper(x int) bool {
+	return isPalindrome(x)
 }

@@ -1,4 +1,4 @@
-package main
+package mergetwosortedlists
 
 import "fmt"
 
@@ -42,13 +42,8 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	return head.Next
 }
 
-func main() {
-	// 1,2,4
-	list1 := ListNode{Val: 1, Next: &ListNode{Val: 2, Next: &ListNode{Val: 4, Next: nil}}}
-	// 1,3,4
-	list2 := ListNode{Val: 1, Next: &ListNode{Val: 3, Next: &ListNode{Val: 4, Next: nil}}}
-
-	result := mergeTwoLists(&list1, &list2)
+func Wrapper(list1 *ListNode, list2 *ListNode) {
+	result := mergeTwoLists(list1, list2)
 
 	if result != nil {
 		for {

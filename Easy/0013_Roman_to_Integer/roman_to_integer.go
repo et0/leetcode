@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package romantointeger
 
 func romanToInt(s string) int {
 	roman := map[byte]int{
@@ -27,6 +23,6 @@ func romanToInt(s string) int {
 	return result
 }
 
-func main() {
-	fmt.Println(romanToInt("MCMXCIV"))
+func Wrapper(s string) int {
+	return romanToInt(s)
 }

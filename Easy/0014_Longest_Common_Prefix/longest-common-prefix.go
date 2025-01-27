@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package longestcommonprefix
 
 func longestCommonPrefix(strs []string) string {
 	min := 0
@@ -34,6 +30,6 @@ func longestCommonPrefix(strs []string) string {
 	return strs[min][0:last]
 }
 
-func main() {
-	fmt.Println(longestCommonPrefix([]string{"a"}))
+func Wrapper(strs []string) string {
+	return longestCommonPrefix(strs)
 }
