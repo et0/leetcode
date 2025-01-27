@@ -37,6 +37,7 @@ func searchInsert1(nums []int, target int) int {
 	return index
 }
 
+// searchinsertposition.Wrapper([]int{1, 3, 5}, 5) // 0035
 func Wrapper(nums []int, target int) int {
 	return searchInsert(nums, target)
 }
