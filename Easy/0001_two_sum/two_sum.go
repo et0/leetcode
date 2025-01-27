@@ -1,10 +1,6 @@
-package main
+package twosum
 
-import (
-	"fmt"
-)
-
-func twoSumSlow(nums []int, target int) []int {
+func TwoSumSlow(nums []int, target int) []int {
 	len := len(nums)
 
 	for i := 0; i < len; i++ {
@@ -18,7 +14,7 @@ func twoSumSlow(nums []int, target int) []int {
 	return []int{}
 }
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	maps := make(map[int]int)
 
 	for k, v := range nums {
@@ -30,8 +26,4 @@ func twoSum(nums []int, target int) []int {
 	}
 
 	return []int{}
-}
-
-func main() {
-	fmt.Println(twoSum([]int{2, 7, 11, 15}, 26))
 }
