@@ -1,3 +1,4 @@
+// https://leetcode.com/problems/tuple-with-same-product/
 package l_m_1726_array
 
 import (
