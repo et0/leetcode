@@ -10,6 +10,7 @@ func checkTree(root *TreeNode) bool {
 	if root == nil {
 		return true
 	}
+	return root.Left.Val+root.Right.Val == root.Val
 }
 
 func Wrapper(root *TreeNode) bool {
