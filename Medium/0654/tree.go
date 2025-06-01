@@ -1,4 +1,4 @@
-package lm654 // https://leetcode.com/problems/maximum-binary-tree/
+package lm0654 // https://leetcode.com/problems/maximum-binary-tree/
 
 type TreeNode struct {
 	Val   int
