@@ -3,7 +3,6 @@ package main
 import "fmt"
 
 func removeElement(nums []int, val int) int {
-	fmt.Println(nums)
 	left := 0
 	for right := len(nums) - 1; left < right; left++ {
 		if nums[left] != val {
@@ -15,7 +14,7 @@ func removeElement(nums []int, val int) int {
 		}
 		nums[left], nums[right] = nums[right], nums[left]
 	}
-	fmt.Println(nums)
+
 	return left
 }
 
