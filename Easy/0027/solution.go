@@ -1,49 +1,24 @@
-package removeelement
+package main
 
 import "fmt"
 
-func removeElement1(nums []int, val int) int {
-	fmt.Println(nums)
-	writeIndex := 0
-	for readIndex := 0; readIndex < len(nums); readIndex++ {
-		if nums[readIndex] != val {
-			nums[writeIndex] = nums[readIndex]
-			writeIndex++
-		}
-	}
-	fmt.Println(nums)
-	return writeIndex
-}
-
 func removeElement(nums []int, val int) int {
 	fmt.Println(nums)
-
-	size := len(nums)
-	if size == 0 {
-		return 0
-	}
-
-	unique := 0
-	for i := 0; i < size; i++ {
-		if nums[i] != val {
-			unique++
+	left := 0
+	for right := len(nums) - 1; left < right; left++ {
+		if nums[left] != val {
 			continue
 		}
 
-		for j := size - 1; j > i; j-- {
-			size--
-			if nums[j] == val {
-				continue
-			}
-			nums[i], nums[j] = nums[j], nums[i]
-			unique++
-			break
-		}
-	}
+		for ; left < right && nums[right] == val; right-- {
 
-	return unique
+		}
+		nums[left], nums[right] = nums[right], nums[left]
+	}
+	fmt.Println(nums)
+	return left
 }
 
-func Wrapper(nums []int, val int) int {
-	return removeElement(nums, val)
+func main() {
+	fmt.Println(removeElement([]int{1, 2, 3, 4, 2, 0, 3}, 2))
 }
