@@ -7,3 +7,4 @@
 | [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/task.go) | Реализация cтека через слайсы. Метод getMin() возвращающая минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |
 | [0345](https://github.com/et0/leetcode/blob/master/Easy/0345/solution.go) | Reverse only vowels in string | string, array, two pointers |
+| [0541](https://github.com/et0/leetcode/blob/master/Easy/0541/solution.go) | Реверс четных подотрезков длинной К | two pointers |
