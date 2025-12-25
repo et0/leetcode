@@ -1,28 +1,26 @@
-package l_e_0003_string
+package main // https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+import "fmt"
 
 func lengthOfLongestSubstring(s string) int {
-	maxr := 0
-	data := make(map[rune]int)
-	for k, v := range s {
-		if index, ok := data[v]; ok {
-			if len(data) > maxr {
-				maxr = len(data)
-			}
-			data = make(map[rune]int)
-			for i := index + 1; i <= k; i++ {
-				data[rune(s[i])] = i
-			}
-		} else {
-			data[v] = k
+	uniq := make(map[byte]int)
+	maxLength := 0
+
+	for left, right := 0, 0; left < len(s); left++ {
+		for ; right < len(s) && uniq[s[right]] == 0; right++ {
+			uniq[s[right]]++
 		}
+
+		if right-left > maxLength {
+			maxLength = right - left
+		}
+
+		uniq[s[left]]--
 	}
 
-	if len(data) > maxr {
-		return len(data)
-	}
-	return maxr
+	return maxLength
 }
 
-func Wrapper(s string) int {
-	return lengthOfLongestSubstring(s)
+func main() {
+	fmt.Println(lengthOfLongestSubstring("pwwkew"))
 }
