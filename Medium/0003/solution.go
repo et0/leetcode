@@ -1,7 +1,5 @@
 package main // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-import "fmt"
-
 func lengthOfLongestSubstring(s string) int {
 	uniq := make(map[byte]int)
 	maxLength := 0
@@ -19,8 +17,4 @@ func lengthOfLongestSubstring(s string) int {
 	}
 
 	return maxLength
-}
-
-func main() {
-	fmt.Println(lengthOfLongestSubstring("pwwkew"))
 }
