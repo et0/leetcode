@@ -9,4 +9,5 @@
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины сумма элементов которой равно или больше target | sliding window |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |
 | [0345](https://github.com/et0/leetcode/blob/master/Easy/0345/solution.go) | Reverse only vowels in string | string, array, two pointers |
+| [0395](https://github.com/et0/leetcode/blob/master/Medium/0395/solution.go) | Найти самую длинную подстроку в которой каждый уникальный элемент встречается K и больше раз | string, sliding window, hash |
 | [0541](https://github.com/et0/leetcode/blob/master/Easy/0541/solution.go) | Реверс четных подотрезков длинной К | two pointers |
