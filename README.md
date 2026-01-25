@@ -12,3 +12,4 @@
 | [0395](https://github.com/et0/leetcode/blob/master/Medium/0395/solution.go) | Найти самую длинную подстроку в которой каждый уникальный элемент встречается K и больше раз | string, sliding window, hash |
 | [0541](https://github.com/et0/leetcode/blob/master/Easy/0541/solution.go) | Реверс четных подотрезков длинной К | two pointers |
 | [1141](https://github.com/et0/leetcode/blob/master/Medium/1141/solution.go) | Поиск уровня с максимальной суммой на дереве | tree |
+| [1984](https://github.com/et0/leetcode/blob/master/Easy/1984/solution.go) | Поиск минимальной разницы между минимальным и максимальным элементов в подмножестве | sliding window, sorting, k | 
