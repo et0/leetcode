@@ -14,7 +14,7 @@ func findMaxAverage(nums []int, k int) float64 {
 		}
 		maxAverage = max(maxAverage, maxCurrent/float64(k))
 
-		// Вычитаем "первый" элемент из под массива, т.к. сдвигаем левую границу
+		// Вычитаем "первый" элемент из подмассива, т.к. сдвигаем левую границу
 		maxCurrent -= float64(nums[left])
 	}
 
