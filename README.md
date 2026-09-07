@@ -8,6 +8,7 @@
 | [0027](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Найти элементы которые дают нужную сумму в отсортированном слайсе | array, two pointers |
 | [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/task.go) | Реализация cтека через слайсы. Метод getMin() возвращающая минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины сумма элементов которой равно или больше target | sliding window |
+| [0283](https://github.com/et0/leetcode/blob/master/Easy/0283/solution.go) | Переносит все нули в конец слайса, не меняя относительный порядок остальных элементов. Используется два указателя: один для сканирования, второй для позиции вставки. | two pointers |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |
 | [0345](https://github.com/et0/leetcode/blob/master/Easy/0345/solution.go) | Reverse only vowels in string | string, array, two pointers |
 | [0395](https://github.com/et0/leetcode/blob/master/Medium/0395/solution.go) | Найти самую длинную подстроку в которой каждый уникальный элемент встречается K и больше раз | string, sliding window, hash |
