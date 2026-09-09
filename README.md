@@ -7,6 +7,7 @@
 | [0146](https://github.com/et0/leetcode/blob/master/Medium/0146/task.go) | Реализация LRU кеша со своей структурой двухсвязного списка. Новый элемент добавляется в начало списка, а самый старый остаётся в хвосте. | LRU, cache, linked list, doubly-linked list, map |
 | [0027](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Найти элементы которые дают нужную сумму в отсортированном слайсе | array, two pointers |
 | [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/task.go) | Реализация cтека через слайсы. Метод getMin() возвращающая минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
+| [0167](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Используется метод двух указателей (сужение диапазона) за O(n). | two pointers |
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины сумма элементов которой равно или больше target | sliding window |
 | [0283](https://github.com/et0/leetcode/blob/master/Easy/0283/solution.go) | Переносит все нули в конец слайса, не меняя относительный порядок остальных элементов. Используется два указателя: один для сканирования, второй для позиции вставки. | two pointers |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |

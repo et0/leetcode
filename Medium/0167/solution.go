@@ -1,7 +1,12 @@
 package main // https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
 
-import "fmt"
+import (
+	"fmt"
+)
 
+// twoSum находит два числа в отсортированном массиве, дающих в сумме target.
+// Используется метод двух указателей (сужение диапазона) за O(n).
+// Возвращает индексы (1-based) в порядке возрастания.
 func twoSum(numbers []int, target int) []int {
 	left, right := 0, len(numbers)-1
 
@@ -11,9 +16,9 @@ func twoSum(numbers []int, target int) []int {
 		}
 
 		if numbers[left]+numbers[right] > target {
-			right--
+			right-- // сумма слишком большая - двигаем правый указатель влево
 		} else {
-			left++
+			left++ // сумма слишком маленькая - двигаем левый указатель вправо
 		}
 	}
 
