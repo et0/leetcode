@@ -1,4 +1,4 @@
-package le0345 // https://leetcode.com/problems/reverse-vowels-of-a-string/description/
+package main // https://leetcode.com/problems/reverse-vowels-of-a-string/description/
 
 func reverseVowels(s string) string {
 	newS := []byte(s)

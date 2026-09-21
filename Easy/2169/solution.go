@@ -1,4 +1,4 @@
-package le2169 // https://leetcode.com/problems/count-operations-to-obtain-zero/
+package main // https://leetcode.com/problems/count-operations-to-obtain-zero/
 
 func countOperations(num1 int, num2 int) int {
 	counter := 0

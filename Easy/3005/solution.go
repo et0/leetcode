@@ -1,4 +1,4 @@
-package le3005 // https://leetcode.com/problems/count-elements-with-maximum-frequency/
+package main // https://leetcode.com/problems/count-elements-with-maximum-frequency/
 
 func maxFrequencyElements(nums []int) int {
 	freq := make(map[int]int)

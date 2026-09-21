@@ -1,4 +1,4 @@
-package le0541 // https://leetcode.com/problems/reverse-string-ii/
+package main // https://leetcode.com/problems/reverse-string-ii/
 
 func reverseStr(s string, k int) string {
 	newS := []byte(s)

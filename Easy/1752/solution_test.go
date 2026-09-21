@@ -1,4 +1,4 @@
-package l_e_1752_array
+package main
 
 import "testing"
 

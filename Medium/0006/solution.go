@@ -1,4 +1,4 @@
-package array // https://leetcode.com/problems/zigzag-conversion/
+package main // https://leetcode.com/problems/zigzag-conversion/
 
 func convert(s string, numRows int) string {
 	size := len(s)

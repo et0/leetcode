@@ -1,4 +1,4 @@
-package lh2402
+package main
 
 import "container/heap"
 

@@ -7,8 +7,8 @@
 | [0015](https://github.com/et0/leetcode/blob/master/Medium/0015/solution.go) | Найти все уникальные тройки чисел в массиве, сумма которых равна нулю | two pointers, sorting |
 | [0027](https://github.com/et0/leetcode/blob/master/Easy/0027/solution.go) | Удалить элемент из массива | two pointers |
 | [0049](https://github.com/et0/leetcode/blob/master/Medium/0049/solution.go) | Сгруппировать строки так, чтобы в каждой группе оказались анаграммы друг друга | hash, string, sorting |
-| [0146](https://github.com/et0/leetcode/blob/master/Medium/0146/task.go) | Реализация LRU кеша со своей структурой двухсвязного списка. Новый элемент добавляется в начало списка, а самый старый остаётся в хвосте. | LRU, cache, linked list, doubly-linked list, map |
-| [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/task.go) | Реализация стека через слайсы. Метод getMin(), возвращающий минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
+| [0146](https://github.com/et0/leetcode/blob/master/Medium/0146/solution.go) | Реализация LRU кеша со своей структурой двухсвязного списка. Новый элемент добавляется в начало списка, а самый старый остаётся в хвосте. | LRU, cache, linked list, doubly-linked list, map |
+| [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/solution.go) | Реализация стека через слайсы. Метод getMin(), возвращающий минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
 | [0165](https://github.com/et0/leetcode/blob/master/Medium/0165/solution.go) | Compare Version Numbers: Сравнить две строки-версии, разбив их по точкам на числовые компоненты и сравнив по порядку (недостающие = 0), вернув -1, 0 или 1 | string, two pointers |
 | [0167](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Найти элементы, которые дают нужную сумму в отсортированном слайсе. Используется метод двух указателей (сужение диапазона) за O(n). | array, two pointers |
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины, сумма элементов которой равна или больше target | sliding window |
