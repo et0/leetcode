@@ -43,7 +43,3 @@ func numOfUnplacedFruits(fruits []int, baskets []int) int {
 
 	return countFruits
 }
-
-func Wrapper(fruits []int, baskets []int) int {
-	return numOfUnplacedFruits(fruits, baskets)
-}

@@ -39,7 +39,3 @@ func isPalindrome(head *ListNode) bool {
 
 	return true
 }
-
-func Wrapper(head *ListNode) bool {
-	return isPalindrome(head)
-}

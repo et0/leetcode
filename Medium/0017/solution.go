@@ -39,7 +39,3 @@ func letterCombinations(digits string) []string {
 
 	return result
 }
-
-func Wrapper(digits string) []string {
-	return letterCombinations(digits)
-}

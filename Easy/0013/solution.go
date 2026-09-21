@@ -22,7 +22,3 @@ func romanToInt(s string) int {
 	}
 	return result
 }
-
-func Wrapper(s string) int {
-	return romanToInt(s)
-}

@@ -26,7 +26,3 @@ func areAlmostEqual(s1 string, s2 string) bool {
 
 	return len(flag) == 0 || len(flag) == 2
 }
-
-func Wrapper(s1 string, s2 string) bool {
-	return areAlmostEqual(s1, s2)
-}

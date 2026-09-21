@@ -20,7 +20,7 @@ func Tree2Slice(head *TreeNode, slice *[]int) {
 	}
 }
 
-func TestWrapper(t *testing.T) {
+func TestSortedArrayToBST(t *testing.T) {
 	tests := []data{
 		{[]int{-10, -3, 0, 5, 9}, []int{0, -3, -10, 9, 5}},
 		{[]int{1, 3}, []int{3, 1}},
@@ -28,7 +28,7 @@ func TestWrapper(t *testing.T) {
 
 	for _, v := range tests {
 		result := make([]int, 0, 10000)
-		Tree2Slice(Wrapper(v.nums), &result)
+		Tree2Slice(sortedArrayToBST(v.nums), &result)
 
 		if len(v.result) != len(result) {
 			t.Error("Expected ", v.result, ", got ", result)

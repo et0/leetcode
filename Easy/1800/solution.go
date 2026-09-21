@@ -21,7 +21,3 @@ func maxAscendingSum(nums []int) int {
 
 	return sumMax
 }
-
-func Wrapper(nums []int) int {
-	return maxAscendingSum(nums)
-}

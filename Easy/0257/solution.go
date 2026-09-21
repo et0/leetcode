@@ -49,7 +49,3 @@ func binaryTreePaths(root *TreeNode) []string {
 
 	return output
 }
-
-func Wrapper(root *TreeNode) []string {
-	return binaryTreePaths(root)
-}

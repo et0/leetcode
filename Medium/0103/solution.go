@@ -32,7 +32,3 @@ func zigzagLevelOrder(root *TreeNode) [][]int {
 
 	return out
 }
-
-func Wrapper(root *TreeNode) [][]int {
-	return zigzagLevelOrder(root)
-}

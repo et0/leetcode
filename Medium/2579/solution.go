@@ -11,7 +11,3 @@ func coloredCells(n int) int64 {
 
 	return result
 }
-
-func Wrapper(n int) int64 {
-	return coloredCells(n)
-}

@@ -38,7 +38,3 @@ func reverse(x int) int {
 
 	return res
 }
-
-func Wrapper(x int) int {
-	return reverse(x)
-}

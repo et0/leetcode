@@ -12,7 +12,3 @@ func isArraySpecial(nums []int) bool {
 
 	return true
 }
-
-func Wrapper(nums []int) bool {
-	return isArraySpecial(nums)
-}

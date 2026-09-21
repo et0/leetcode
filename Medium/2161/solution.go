@@ -22,7 +22,3 @@ func pivotArray(nums []int, pivot int) []int {
 
 	// return slices.Concat(low, middle, high)
 }
-
-func Wrapper(nums []int, pivot int) []int {
-	return pivotArray(nums, pivot)
-}

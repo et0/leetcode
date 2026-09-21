@@ -23,7 +23,3 @@ func isPalindrome(x int) bool {
 
 	return true
 }
-
-func Wrapper(x int) bool {
-	return isPalindrome(x)
-}

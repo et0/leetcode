@@ -27,7 +27,3 @@ func singleNumber(nums []int) int {
 
 	return result
 }
-
-func Wrapper(nums []int) int {
-	return singleNumber(nums)
-}

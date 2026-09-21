@@ -7,7 +7,7 @@ type data struct {
 	result bool
 }
 
-func TestWrapper(t *testing.T) {
+func TestIsBalanced(t *testing.T) {
 	tests := []data{
 		{
 			&TreeNode{Val: 6, Left: &TreeNode{Val: 20, Left: &TreeNode{Val: 30, Left: &TreeNode{Val: 40, Left: nil, Right: nil}, Right: &TreeNode{Val: 41, Left: nil, Right: &TreeNode{Val: 51, Left: &TreeNode{Val: 60, Left: nil, Right: nil}, Right: &TreeNode{Val: 61, Left: nil, Right: nil}}}}, Right: nil}, Right: &TreeNode{Val: 21, Left: &TreeNode{Val: 30, Left: nil, Right: nil}, Right: &TreeNode{Val: 31, Left: &TreeNode{Val: 40, Left: nil, Right: nil}, Right: nil}}},
@@ -24,7 +24,7 @@ func TestWrapper(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		result := Wrapper(v.root)
+		result := isBalanced(v.root)
 		if result != v.result {
 			t.Error("Expected ", v.result, ", got ", result, ", for ", v.root)
 		}

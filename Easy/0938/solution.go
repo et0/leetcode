@@ -37,7 +37,3 @@ func rangeSumBST(root *TreeNode, low int, high int) int {
 
 	return sum
 }
-
-func Wrapper(root *TreeNode, low int, high int) int {
-	return rangeSumBST(root, low, high)
-}

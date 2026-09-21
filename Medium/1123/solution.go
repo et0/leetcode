@@ -27,7 +27,3 @@ func recursion(root *TreeNode) (int, *TreeNode) {
 	}
 	return leftDepth + 1, root
 }
-
-func Wrapper(root *TreeNode) *TreeNode {
-	return lcaDeepestLeaves(root)
-}

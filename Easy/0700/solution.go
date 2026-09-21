@@ -34,7 +34,3 @@ func searchBST(root *TreeNode, val int) *TreeNode {
 
 	return root
 }
-
-func Wrapper(root *TreeNode, val int) *TreeNode {
-	return searchBST(root, val)
-}

@@ -19,7 +19,3 @@ func maxProfit(prices []int) int {
 	}
 	return profit
 }
-
-func Wrapper(prices []int) int {
-	return maxProfit(prices)
-}

@@ -22,7 +22,3 @@ func maximumDifference(nums []int) int {
 
 	return min
 }
-
-func Wrapper(nums []int) int {
-	return maximumDifference(nums)
-}

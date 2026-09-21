@@ -36,7 +36,3 @@ func postorderTraversal(root *TreeNode) []int {
 
 	return numbers
 }
-
-func Wrapper(root *TreeNode) []int {
-	return postorderTraversal(root)
-}

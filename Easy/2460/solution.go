@@ -26,7 +26,3 @@ func applyOperations(nums []int) []int {
 
 	return nums
 }
-
-func Wrapper(nums []int) []int {
-	return applyOperations(nums)
-}

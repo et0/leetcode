@@ -30,7 +30,3 @@ func insertIntoBST(root *TreeNode, val int) *TreeNode {
 
 	return head
 }
-
-func Wrapper(root *TreeNode, val int) *TreeNode {
-	return insertIntoBST(root, val)
-}

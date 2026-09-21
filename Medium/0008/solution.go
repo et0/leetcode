@@ -98,7 +98,3 @@ func myAtoi(s string) int {
 
 	return resultInt
 }
-
-func Wrapper(s string) int {
-	return myAtoi(s)
-}

@@ -14,7 +14,3 @@ func scoreOfString(s string) int {
 
 	return score
 }
-
-func Wrapper(s string) int {
-	return scoreOfString(s)
-}

@@ -14,7 +14,3 @@ func maximumTripletValue(nums []int) int64 {
 	}
 	return 0
 }
-
-func Wrapper(nums []int) int64 {
-	return maximumTripletValue(nums)
-}

@@ -36,7 +36,3 @@ func reverseListRecursive(head *ListNode) *ListNode {
 
 	return revHead
 }
-
-func Wrapper(head *ListNode) *ListNode {
-	return reverseListRecursive(head)
-}

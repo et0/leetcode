@@ -39,7 +39,3 @@ func punishmentNumber(n int) int {
 
 	return result
 }
-
-func Wrapper(n int) int {
-	return punishmentNumber(n)
-}

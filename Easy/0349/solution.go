@@ -50,7 +50,3 @@ func search(n int, nums *[]int) bool {
 
 	return false
 }
-
-func Wrapper(nums1 []int, nums2 []int) []int {
-	return intersection(nums1, nums2)
-}

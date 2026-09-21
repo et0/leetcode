@@ -31,7 +31,3 @@ func maxAbsoluteSum(nums []int) int {
 	}
 	return max
 }
-
-func Wrapper(nums []int) int {
-	return maxAbsoluteSum(nums)
-}

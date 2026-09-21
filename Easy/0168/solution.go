@@ -32,7 +32,3 @@ func convertToTitle(columnNumber int) string {
 
 	return string(columnName)
 }
-
-func Wrapper(columnNumber int) string {
-	return convertToTitle(columnNumber)
-}

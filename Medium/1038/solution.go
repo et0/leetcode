@@ -57,7 +57,3 @@ func bstToGstDefault(root *TreeNode) *TreeNode {
 
 	return head
 }
-
-func Wrapper(root *TreeNode) *TreeNode {
-	return bstToGst(root)
-}

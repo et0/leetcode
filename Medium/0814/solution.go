@@ -31,7 +31,3 @@ func pruneTree(root *TreeNode) *TreeNode {
 
 	return root
 }
-
-func Wrapper(root *TreeNode) *TreeNode {
-	return pruneTree(root)
-}

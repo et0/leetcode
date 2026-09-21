@@ -63,7 +63,3 @@ func mergeTrees(root1 *TreeNode, root2 *TreeNode) *TreeNode {
 
 	return head
 }
-
-func Wrapper(root1 *TreeNode, root2 *TreeNode) *TreeNode {
-	return mergeTrees(root1, root2)
-}

@@ -18,7 +18,3 @@ func invertTree(root *TreeNode) *TreeNode {
 
 	return root
 }
-
-func Wrapper(root *TreeNode) *TreeNode {
-	return invertTree(root)
-}

@@ -20,7 +20,3 @@ func isIsomorphic(s string, t string) bool {
 
 	return true
 }
-
-func Wrapper(s string, t string) bool {
-	return isIsomorphic(s, t)
-}

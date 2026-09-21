@@ -15,7 +15,3 @@ func isHappy(n int) bool {
 
 	return n == 1 || n == 7
 }
-
-func Wrapper(n int) bool {
-	return isHappy(n)
-}

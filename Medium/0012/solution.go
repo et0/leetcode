@@ -34,7 +34,3 @@ func intToRoman(num int) string {
 
 	return string(result[:])
 }
-
-func Wrapper(num int) string {
-	return intToRoman(num)
-}

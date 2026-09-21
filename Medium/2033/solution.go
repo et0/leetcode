@@ -38,7 +38,3 @@ func minOperations(grid [][]int, x int) int {
 
 	return counter
 }
-
-func Wrapper(grid [][]int, x int) int {
-	return minOperations(grid, x)
-}

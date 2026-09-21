@@ -22,7 +22,3 @@ func getDecimalValue(head *ListNode) int {
 
 	return out
 }
-
-func Wrapper(head *ListNode) int {
-	return getDecimalValue(head)
-}

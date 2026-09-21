@@ -39,7 +39,3 @@ func preorderTraversal(root *TreeNode) []int {
 
 	return values
 }
-
-func Wrapper(root *TreeNode) []int {
-	return preorderTraversal(root)
-}

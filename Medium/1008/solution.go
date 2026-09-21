@@ -41,7 +41,3 @@ func bstFromPreorder(preorder []int) *TreeNode {
 
 	return head
 }
-
-func Wrapper(preorder []int) *TreeNode {
-	return bstFromPreorder(preorder)
-}

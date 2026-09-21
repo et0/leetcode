@@ -12,7 +12,3 @@ func majorityElement(nums []int) int {
 
 	return 0
 }
-
-func Wrapper(nums []int) int {
-	return majorityElement(nums)
-}

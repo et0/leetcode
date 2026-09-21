@@ -18,7 +18,3 @@ func isValid(s string) bool {
 	}
 	return len(stack) == 0
 }
-
-func Wrapper(s string) bool {
-	return isValid(s)
-}

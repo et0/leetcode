@@ -40,7 +40,3 @@ func sumEvenGrandparent(root *TreeNode) int {
 
 	return sum
 }
-
-func Wrapper(root *TreeNode) int {
-	return sumEvenGrandparent(root)
-}

@@ -1,7 +1,5 @@
 package main // https://leetcode.com/problems/product-of-the-last-k-numbers/description/
 
-import "fmt"
-
 type ProductOfNumbers struct {
 	last []int
 }
@@ -28,19 +26,4 @@ func (prod *ProductOfNumbers) GetProduct(k int) int {
 	}
 
 	return prod.last[size-1] / prod.last[size-1-k]
-}
-
-func Wrapper(todo []string, data []int) {
-	obj := Constructor()
-
-	for i := 1; i < len(todo); i++ {
-		switch todo[i] {
-		case "add":
-			obj.Add(data[i])
-		case "getProduct":
-			fmt.Println(obj.GetProduct(data[i]))
-		}
-	}
-
-	fmt.Println(obj)
 }

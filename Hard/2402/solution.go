@@ -69,7 +69,3 @@ func mostBooked(n int, meetings [][]int) int {
 
 	return min
 }
-
-func Wrapper(n int, meetings [][]int) int {
-	return mostBooked(n, meetings)
-}

@@ -44,7 +44,3 @@ func minimumRecolors(blocks string, k int) int {
 
 	return min
 }
-
-func Wrapper(blocks string, k int) int {
-	return minimumRecolors(blocks, k)
-}

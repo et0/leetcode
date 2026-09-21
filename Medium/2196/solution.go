@@ -39,7 +39,3 @@ func createBinaryTree(descriptions [][]int) *TreeNode {
 
 	return nil
 }
-
-func Wrapper(descriptions [][]int) *TreeNode {
-	return createBinaryTree(descriptions)
-}

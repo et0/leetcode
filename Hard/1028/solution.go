@@ -40,7 +40,3 @@ func recoverFromPreorder(traversal string) *TreeNode {
 
 	return head
 }
-
-func Wrapper(traversal string) *TreeNode {
-	return recoverFromPreorder(traversal)
-}

@@ -24,7 +24,3 @@ func countSymmetricIntegers(low int, high int) int {
 
 	return symmetric
 }
-
-func Wrapper(low int, high int) int {
-	return countSymmetricIntegers(low, high)
-}

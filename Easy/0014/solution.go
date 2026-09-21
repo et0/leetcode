@@ -29,7 +29,3 @@ func longestCommonPrefix(strs []string) string {
 
 	return strs[min][0:last]
 }
-
-func Wrapper(strs []string) string {
-	return longestCommonPrefix(strs)
-}

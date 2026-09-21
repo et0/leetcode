@@ -25,7 +25,3 @@ func isVowel(s byte) bool {
 
 	return false
 }
-
-func Wrapper(s string) string {
-	return reverseVowels(s)
-}

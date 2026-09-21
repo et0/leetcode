@@ -12,7 +12,3 @@ func checkTree(root *TreeNode) bool {
 	}
 	return root.Left.Val+root.Right.Val == root.Val
 }
-
-func Wrapper(root *TreeNode) bool {
-	return checkTree(root)
-}

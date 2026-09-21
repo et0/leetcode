@@ -18,7 +18,3 @@ func titleToNumber(columnTitle string) int {
 
 	return number
 }
-
-func Wrapper(columnTitle string) int {
-	return titleToNumber(columnTitle)
-}

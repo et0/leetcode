@@ -20,7 +20,3 @@ func getRow(rowIndex int) []int {
 
 	return row
 }
-
-func Wrapper(rowIndex int) []int {
-	return getRow(rowIndex)
-}

@@ -7,7 +7,3 @@ func buildArray(nums []int) []int {
 	}
 	return new
 }
-
-func Wrapper(nums []int) []int {
-	return buildArray(nums)
-}

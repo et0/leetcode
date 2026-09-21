@@ -12,7 +12,3 @@ func hammingWeight(n int) int {
 
 	return bits
 }
-
-func Wrapper(n int) int {
-	return hammingWeight(n)
-}

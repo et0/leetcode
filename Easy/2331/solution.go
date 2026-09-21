@@ -18,7 +18,3 @@ func evaluateTree(root *TreeNode) bool {
 		return false
 	}
 }
-
-func Wrapper(root *TreeNode) bool {
-	return evaluateTree(root)
-}

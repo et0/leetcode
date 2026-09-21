@@ -38,7 +38,3 @@ func isValid(word string) bool {
 
 	return (digit || upper || lower) && vowel && consonant
 }
-
-func Wrapper(word string) bool {
-	return isValid(word)
-}

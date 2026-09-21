@@ -16,7 +16,3 @@ func findLucky(arr []int) int {
 
 	return max
 }
-
-func Wrapper(arr []int) int {
-	return findLucky(arr)
-}

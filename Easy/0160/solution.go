@@ -31,7 +31,3 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 
 	return nil
 }
-
-func Wrapper(headA, headB *ListNode) *ListNode {
-	return getIntersectionNode(headA, headB)
-}

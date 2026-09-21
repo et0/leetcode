@@ -50,7 +50,3 @@ func check(nums []int) bool {
 	}
 	return true
 }
-
-func Wrapper(nums []int) bool {
-	return check(nums)
-}

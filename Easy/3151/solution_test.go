@@ -7,7 +7,7 @@ type data struct {
 	result bool
 }
 
-func TestWrapper(t *testing.T) {
+func TestIsArraySpecial(t *testing.T) {
 	tests := []data{
 		{[]int{1}, true},
 		{[]int{2, 1, 4}, true},
@@ -15,7 +15,7 @@ func TestWrapper(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		result := Wrapper(v.nums)
+		result := isArraySpecial(v.nums)
 		if result != v.result {
 			t.Error("Expected ", v.result, ", got ", result)
 		}

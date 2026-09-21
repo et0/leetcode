@@ -46,7 +46,3 @@ func numberOfAlternatingGroups(colors []int, k int) int {
 
 	return groups
 }
-
-func Wrapper(colors []int, k int) int {
-	return numberOfAlternatingGroups(colors, k)
-}

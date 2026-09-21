@@ -28,7 +28,3 @@ func levelOrder(root *TreeNode) [][]int {
 
 	return out
 }
-
-func Wrapper(root *TreeNode) [][]int {
-	return levelOrder(root)
-}

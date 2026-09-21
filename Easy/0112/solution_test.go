@@ -10,7 +10,7 @@ type data struct {
 	result    bool
 }
 
-func TestWrapper(t *testing.T) {
+func TestHasPathSum(t *testing.T) {
 	tests := []data{
 		{
 			&TreeNode{
@@ -74,7 +74,7 @@ func TestWrapper(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		result := Wrapper(v.root, v.targetSum)
+		result := hasPathSum(v.root, v.targetSum)
 		if result != v.result {
 			t.Error("Expected ", v.result, ", got ", result, ", for ", v.root)
 		}

@@ -49,7 +49,3 @@ func removeElementsRecursiveMy(head *ListNode, val int) *ListNode {
 
 	return head
 }
-
-func Wrapper(head *ListNode, val int) *ListNode {
-	return removeElementsRecursiveMy(head, val)
-}

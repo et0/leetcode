@@ -19,7 +19,3 @@ func convert(s string, numRows int) string {
 
 	return string(result[:])
 }
-
-func Wrapper(s string, numRows int) string {
-	return convert(s, numRows)
-}

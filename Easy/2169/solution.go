@@ -14,7 +14,3 @@ func countOperations(num1 int, num2 int) int {
 
 	return counter
 }
-
-func Wrapper(num1 int, num2 int) int {
-	return countOperations(num1, num2)
-}

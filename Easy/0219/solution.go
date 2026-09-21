@@ -20,7 +20,3 @@ func containsNearbyDuplicate(nums []int, k int) bool {
 
 	return false
 }
-
-func Wrapper(nums []int, k int) bool {
-	return containsNearbyDuplicate(nums, k)
-}

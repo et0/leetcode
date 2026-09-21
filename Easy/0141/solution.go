@@ -48,7 +48,3 @@ func hasCycle_SetMark(head *ListNode) bool {
 
 	return false
 }
-
-func Wrapper(head *ListNode) bool {
-	return hasCycle(head)
-}

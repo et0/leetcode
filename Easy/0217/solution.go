@@ -13,7 +13,3 @@ func containsDuplicate(nums []int) bool {
 
 	return false
 }
-
-func Wrapper(nums []int) bool {
-	return containsDuplicate(nums)
-}

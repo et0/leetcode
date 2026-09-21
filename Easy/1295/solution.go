@@ -9,7 +9,3 @@ func findNumbers(nums []int) int {
 	}
 	return even
 }
-
-func Wrapper(nums []int) int {
-	return findNumbers(nums)
-}

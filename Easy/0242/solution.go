@@ -19,7 +19,3 @@ func isAnagram(s string, t string) bool {
 
 	return true
 }
-
-func Wrapper(s string, t string) bool {
-	return isAnagram(s, t)
-}

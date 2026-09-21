@@ -7,7 +7,7 @@ type data struct {
 	result       string
 }
 
-func TestWrapper(t *testing.T) {
+func TestConvertToTitle(t *testing.T) {
 	tests := []data{
 		{1, "A"},
 		{2147483647, "FXSHRXW"},
@@ -17,7 +17,7 @@ func TestWrapper(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		result := Wrapper(v.columnNumber)
+		result := convertToTitle(v.columnNumber)
 		if v.result != result {
 			t.Error("Expected ", v.result, ", got ", result)
 		}

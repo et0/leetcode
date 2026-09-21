@@ -27,7 +27,3 @@ func constructMaximumBinaryTree(nums []int) *TreeNode {
 
 	return root
 }
-
-func Wrapper(nums []int) *TreeNode {
-	return constructMaximumBinaryTree(nums)
-}

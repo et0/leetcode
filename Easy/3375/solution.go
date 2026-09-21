@@ -15,7 +15,3 @@ func minOperations(nums []int, k int) int {
 
 	return len(db) - 1
 }
-
-func Wrapper(nums []int, k int) int {
-	return minOperations(nums, k)
-}

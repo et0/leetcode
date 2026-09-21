@@ -43,7 +43,3 @@ func pathSum(root *TreeNode, targetSum int) [][]int {
 
 	return vals
 }
-
-func Wrapper(root *TreeNode, targetSum int) [][]int {
-	return pathSum(root, targetSum)
-}

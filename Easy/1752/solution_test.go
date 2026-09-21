@@ -7,7 +7,7 @@ type data struct {
 	result bool
 }
 
-func TestWrapper(t *testing.T) {
+func TestCheck(t *testing.T) {
 	tests := []data{
 		{[]int{1, 1, 1}, true},
 		{[]int{}, true},
@@ -18,7 +18,7 @@ func TestWrapper(t *testing.T) {
 	}
 
 	for _, v := range tests {
-		result := Wrapper(v.nums)
+		result := check(v.nums)
 		if result != v.result {
 			t.Error("Expected ", v.result, ", got ", result, " for ", v.nums)
 		}

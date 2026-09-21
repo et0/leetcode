@@ -33,7 +33,3 @@ func sumOfLeftLeaves(root *TreeNode) int {
 
 	return sum
 }
-
-func Wrapper(root *TreeNode) int {
-	return sumOfLeftLeaves(root)
-}

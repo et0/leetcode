@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type ListNode struct {
 	Val  int
 	Next *ListNode
@@ -40,19 +38,4 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 	}
 
 	return head.Next
-}
-
-func Wrapper(list1 *ListNode, list2 *ListNode) {
-	result := mergeTwoLists(list1, list2)
-
-	if result != nil {
-		for {
-			fmt.Println(result.Val)
-			if result.Next == nil {
-				break
-			}
-
-			result = result.Next
-		}
-	}
 }

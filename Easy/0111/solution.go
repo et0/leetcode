@@ -28,7 +28,3 @@ func minDepth(root *TreeNode) int {
 
 	return min(minDepth(root.Left)+1, minDepth(root.Right)+1)
 }
-
-func Wrapper(root *TreeNode) int {
-	return minDepth(root)
-}

@@ -12,7 +12,3 @@ func strStr(haystack string, needle string) int {
 
 	return -1
 }
-
-func Wrapper(haystack string, needle string) int {
-	return strStr(haystack, needle)
-}

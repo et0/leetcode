@@ -114,9 +114,3 @@ func (c *Codec) deserialize(data string) *TreeNode {
 
 	return head
 }
-
-func Wrapper(root *TreeNode) {
-	c := Constructor()
-	// data := c.serialize(root)
-	c.deserialize("1:2:3:n:n:4:17:5:11:18:n:6:n:12:14:n:n:7:9:13:n:15:n:n:8:10:n:n:n:16")
-}

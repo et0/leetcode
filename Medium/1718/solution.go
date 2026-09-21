@@ -45,7 +45,3 @@ func constructDistancedSequence(n int) []int {
 
 	return seq
 }
-
-func Wrapper(n int) []int {
-	return constructDistancedSequence(n)
-}

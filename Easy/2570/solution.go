@@ -38,7 +38,3 @@ func mergeArrays(nums1 [][]int, nums2 [][]int) [][]int {
 
 	return nums
 }
-
-func Wrapper(nums1 [][]int, nums2 [][]int) [][]int {
-	return mergeArrays(nums1, nums2)
-}

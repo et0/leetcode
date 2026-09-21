@@ -82,7 +82,3 @@ func isBalanced(root *TreeNode) bool {
 
 	return true
 }
-
-func Wrapper(root *TreeNode) bool {
-	return isBalanced(root)
-}

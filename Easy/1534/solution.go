@@ -30,7 +30,3 @@ func countGoodTriplets(arr []int, a int, b int, c int) int {
 
 	return good
 }
-
-func Wrapper(arr []int, a int, b int, c int) int {
-	return countGoodTriplets(arr, a, b, c)
-}

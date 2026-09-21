@@ -13,7 +13,3 @@ func countNodes(root *TreeNode) int {
 
 	return 1 + countNodes(root.Left) + countNodes(root.Right)
 }
-
-func Wrapper(root *TreeNode) int {
-	return countNodes(root)
-}

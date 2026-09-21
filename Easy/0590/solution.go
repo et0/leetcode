@@ -54,7 +54,3 @@ func postorderIteratively(root *Node) []int {
 
 	return output
 }
-
-func Wrapper(root *Node) []int {
-	return postorder(root)
-}

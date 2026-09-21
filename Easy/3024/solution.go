@@ -15,7 +15,3 @@ func triangleType(nums []int) string {
 
 	return "none"
 }
-
-func Wrapper(nums []int) string {
-	return triangleType(nums)
-}

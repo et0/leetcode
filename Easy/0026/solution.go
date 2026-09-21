@@ -17,7 +17,3 @@ func removeDuplicates(nums []int) int {
 
 	return unique + 1
 }
-
-func Wrapper(nums []int) int {
-	return removeDuplicates(nums)
-}

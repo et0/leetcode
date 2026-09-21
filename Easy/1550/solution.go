@@ -21,7 +21,3 @@ func threeConsecutiveOdds(arr []int) bool {
 
 	return result
 }
-
-func Wrapper(arr []int) bool {
-	return threeConsecutiveOdds(arr)
-}

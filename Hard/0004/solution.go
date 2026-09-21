@@ -34,7 +34,3 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	}
 	return float64(median.current+median.prev) / 2
 }
-
-func Wrapper(nums1 []int, nums2 []int) float64 {
-	return findMedianSortedArrays(nums1, nums2)
-}

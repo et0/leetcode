@@ -24,7 +24,3 @@ func reverseOddLevels(root *TreeNode) *TreeNode {
 
 	return root
 }
-
-func Wrapper(root *TreeNode) *TreeNode {
-	return reverseOddLevels(root)
-}

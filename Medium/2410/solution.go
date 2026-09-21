@@ -25,7 +25,3 @@ func matchPlayersAndTrainers(players []int, trainers []int) int {
 
 	return out
 }
-
-func Wrapper(players []int, trainers []int) int {
-	return matchPlayersAndTrainers(players, trainers)
-}

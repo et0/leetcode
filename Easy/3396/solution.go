@@ -19,7 +19,3 @@ func minimumOperations(nums []int) int {
 
 	return 0
 }
-
-func Wrapper(nums []int) int {
-	return minimumOperations(nums)
-}

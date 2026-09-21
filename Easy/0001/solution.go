@@ -27,7 +27,3 @@ func twoSum(nums []int, target int) []int {
 
 	return []int{}
 }
-
-func Wrapper(nums []int, target int) []int {
-	return twoSum(nums, target)
-}

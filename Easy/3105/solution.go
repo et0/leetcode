@@ -26,7 +26,3 @@ func longestMonotonicSubarray(nums []int) int {
 
 	return max
 }
-
-func Wrapper(nums []int) int {
-	return longestMonotonicSubarray(nums)
-}

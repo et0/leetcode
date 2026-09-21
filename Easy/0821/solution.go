@@ -30,7 +30,3 @@ func shortestToChar(s string, c byte) []int {
 
 	return answer
 }
-
-func Wrapper(s string, c byte) []int {
-	return shortestToChar(s, c)
-}

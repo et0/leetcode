@@ -34,7 +34,3 @@ func sortedArrayToBST(nums []int) *TreeNode {
 
 	return &head
 }
-
-func Wrapper(nums []int) *TreeNode {
-	return sortedArrayToBST(nums)
-}

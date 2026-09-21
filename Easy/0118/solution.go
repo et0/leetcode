@@ -19,7 +19,3 @@ func generate(numRows int) [][]int {
 
 	return triangle
 }
-
-func Wrapper(numRows int) [][]int {
-	return generate(numRows)
-}
