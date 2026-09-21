@@ -1,21 +1,29 @@
 package main // https://leetcode.com/problems/isomorphic-strings/
 
+// Идея: соответствие символов должно быть взаимно однозначным — символ s
+// переходит ровно в один символ t, и символ t занят ровно одним символом s.
+// Поэтому две map: sToT (прямое) и tToS (обратное), на каждой позиции проверяем обе.
+// Время: O(n) — один проход, на каждом шаге константное число операций с map,
+// каждая O(1) в среднем.
+// Память: O(1) — в каждой map не больше 128 ключей (алфавит ASCII),
+// от длины строки размер не зависит.
+// Ловушка: одной проверки s→t мало — она пропускает случай, когда два разных
+// символа s переходят в один символ t ("ab" / "cc").
 func isIsomorphic(s string, t string) bool {
-	direct := make(map[rune]rune)
-	reverse := make(map[rune]rune)
+	sToT := make(map[byte]byte)
+	tToS := make(map[byte]byte)
 
-	for k, v := range s {
-		if _, ok := direct[v]; !ok {
-			direct[v] = rune(t[k])
-		} else if direct[v] != rune(t[k]) {
+	for i := 0; i < len(s); i++ {
+		if v, exists := sToT[s[i]]; exists && v != t[i] {
 			return false
 		}
 
-		if _, ok := reverse[rune(t[k])]; !ok {
-			reverse[rune(t[k])] = v
-		} else if reverse[rune(t[k])] != v {
+		if v, exists := tToS[t[i]]; exists && v != s[i] {
 			return false
 		}
+
+		sToT[s[i]] = t[i]
+		tToS[t[i]] = s[i]
 	}
 
 	return true
