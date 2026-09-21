@@ -1,7 +1,15 @@
-package main
+package main // https://leetcode.com/problems/roman-to-integer/
 
+// Идея: каждый символ сравниваем с соседом справа: меньше соседа — вычитаем,
+// иначе прибавляем. Шесть исключений (IV, IX, XL, XC, CD, CM) — это и есть
+// "меньший перед большим", перечислять их отдельно не нужно. Идём с конца,
+// последний символ всегда прибавляется.
+// Время: O(n) — один проход по строке, поиск в map из 7 ключей — O(1).
+// Память: O(1) — map фиксированного размера (7 римских символов), от длины строки не зависит.
+// Ловушка: равные соседи (III) прибавляются. Если перевернуть условие "меньше — вычесть"
+// в "больше или равно — прибавить", нужен >=, а не >.
 func romanToInt(s string) int {
-	roman := map[byte]int{
+	data := map[byte]int{
 		'I': 1,
 		'V': 5,
 		'X': 10,
@@ -11,14 +19,14 @@ func romanToInt(s string) int {
 		'M': 1000,
 	}
 
-	result := 0
-	size := len(s)
-	for i := 0; i < size; i++ {
-		if i+1 < size && roman[s[i]] < roman[s[i+1]] {
-			result -= roman[s[i]]
+	out := data[s[len(s)-1]]
+	for i := len(s) - 2; i >= 0; i-- {
+		if data[s[i]] >= data[s[i+1]] {
+			out += data[s[i]]
 		} else {
-			result += roman[s[i]]
+			out -= data[s[i]]
 		}
 	}
-	return result
+
+	return out
 }

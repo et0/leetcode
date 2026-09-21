@@ -5,6 +5,7 @@
 | [0001](https://github.com/et0/leetcode/blob/master/Easy/0001/solution.go) | Найти индексы двух чисел массива, сумма которых равна target | array, hash |
 | [0003](https://github.com/et0/leetcode/blob/master/Medium/0003/solution.go) | Найти самую длинную строку с уникальными символами | sliding window |
 | [0011](https://github.com/et0/leetcode/blob/master/Medium/0011/solution.go) | Найти максимальный объём воды, который можно вместить между двумя линиями массива | two pointers |
+| [0013](https://github.com/et0/leetcode/blob/master/Easy/0013/solution.go) | Перевести римское число в целое. Каждый символ сравнивается с соседом справа: меньше — вычитается, иначе прибавляется | string, hash |
 | [0015](https://github.com/et0/leetcode/blob/master/Medium/0015/solution.go) | Найти все уникальные тройки чисел в массиве, сумма которых равна нулю | two pointers, sorting |
 | [0027](https://github.com/et0/leetcode/blob/master/Easy/0027/solution.go) | Удалить элемент из массива | two pointers |
 | [0049](https://github.com/et0/leetcode/blob/master/Medium/0049/solution.go) | Сгруппировать строки так, чтобы в каждой группе оказались анаграммы друг друга | hash, string, sorting |
