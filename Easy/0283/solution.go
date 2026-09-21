@@ -46,7 +46,3 @@ func moveZeroes2(nums []int) {
 
 	fmt.Println(nums)
 }
-
-func main() {
-	moveZeroes([]int{0, 1, 0, 3, 12})
-}

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func removeElement(nums []int, val int) int {
 	left := 0
 	for right := len(nums) - 1; left < right; left++ {
@@ -16,8 +14,4 @@ func removeElement(nums []int, val int) int {
 	}
 
 	return left
-}
-
-func main() {
-	fmt.Println(removeElement([]int{1, 2, 3, 4, 2, 0, 3}, 2))
 }

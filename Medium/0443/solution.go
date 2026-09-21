@@ -1,7 +1,6 @@
 package main // https://leetcode.com/problems/string-compression/
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -27,8 +26,4 @@ func compress(chars []byte) int {
 	}
 
 	return idx
-}
-
-func main() {
-	fmt.Println(compress([]byte("abbbbbbbba")))
 }

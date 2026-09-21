@@ -51,8 +51,3 @@ func threeSum(nums []int) [][]int {
 
 	return result
 }
-
-func main() {
-	// [-4 1 2 2 3]
-	threeSum([]int{-4, 1, 2, 2, 2, 2, 3})
-}

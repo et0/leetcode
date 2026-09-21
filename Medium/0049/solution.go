@@ -1,7 +1,6 @@
 package main // https://leetcode.com/problems/group-anagrams/
 
 import (
-	"fmt"
 	"slices"
 	"strconv"
 	"strings"
@@ -66,8 +65,4 @@ func groupAnagrams(strs []string) [][]string {
 	}
 
 	return out
-}
-
-func main() {
-	fmt.Println(groupAnagrams([]string{"bdddddddddd", "bbbbbbbbbbc"}))
 }

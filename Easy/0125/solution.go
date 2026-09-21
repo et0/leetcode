@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
@@ -23,8 +22,4 @@ func isPalindrome(s string) bool {
 	}
 
 	return true
-}
-
-func main() {
-	fmt.Println(isPalindrome("мамвам"))
 }

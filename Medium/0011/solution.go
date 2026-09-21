@@ -1,7 +1,5 @@
 package main // https://leetcode.com/problems/container-with-most-water/
 
-import "fmt"
-
 // maxArea находит максимальный объём воды, который можно вместить
 // между двумя линиями массива height. Использует метод двух указателей:
 // на каждом шаге сдвигаем указатель с меньшей высотой внутрь.
@@ -36,8 +34,4 @@ func maxArea(height []int) int {
 	}
 
 	return maxAmount
-}
-
-func main() {
-	fmt.Println(maxArea([]int{1, 8, 6, 2, 5, 4, 8, 3, 7}))
 }

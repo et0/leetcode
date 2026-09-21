@@ -20,7 +20,3 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 	}
 	fmt.Println(nums1)
 }
-
-func main() {
-	merge([]int{0, 0, 0}, 0, []int{2, 5, 6}, 3)
-}

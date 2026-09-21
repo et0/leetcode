@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -20,35 +18,4 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
 	}
 
 	return isSameTree(p.Left, q.Left) && isSameTree(p.Right, q.Right)
-}
-
-func main() {
-	p := TreeNode{
-		Val: 1,
-		Left: &TreeNode{
-			Val:   3,
-			Left:  nil,
-			Right: nil,
-		},
-		Right: &TreeNode{
-			Val:   3,
-			Left:  nil,
-			Right: nil,
-		},
-	}
-
-	q := TreeNode{
-		Val: 1,
-		Left: &TreeNode{
-			Val:   3,
-			Left:  nil,
-			Right: nil,
-		},
-		Right: &TreeNode{
-			Val:   3,
-			Left:  nil,
-			Right: nil,
-		},
-	}
-	fmt.Println(isSameTree(&p, &q))
 }

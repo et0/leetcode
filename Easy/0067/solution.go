@@ -115,7 +115,3 @@ func addBinary(a string, b string) string {
 
 	return ""
 }
-
-func main() {
-	fmt.Println(addBinary("10", "101"))
-}

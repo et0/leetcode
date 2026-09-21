@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func lengthOfLastWord(s string) int {
 	size := len(s)
 	index := 0
@@ -16,8 +14,4 @@ func lengthOfLastWord(s string) int {
 	}
 
 	return index
-}
-
-func main() {
-	fmt.Println(lengthOfLastWord("Hello World"))
 }

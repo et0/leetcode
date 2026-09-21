@@ -1,9 +1,5 @@
 package main // https://leetcode.com/problems/minimum-size-subarray-sum/
 
-import (
-	"fmt"
-)
-
 func minSubArrayLen(target int, nums []int) int {
 	minLength := 100001
 	sum := 0
@@ -25,8 +21,4 @@ func minSubArrayLen(target int, nums []int) int {
 	}
 
 	return minLength
-}
-
-func main() {
-	fmt.Println(minSubArrayLen(5, []int{1, 1, 1, 1, 1, 1, 1, 1}))
 }

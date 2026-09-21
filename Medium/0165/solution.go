@@ -1,7 +1,6 @@
 package main // https://leetcode.com/problems/compare-version-numbers/
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -45,8 +44,4 @@ func compareVersion(version1 string, version2 string) int {
 	}
 
 	return 0
-}
-
-func main() {
-	fmt.Println(compareVersion("1.0", "1.0.0.0"))
 }

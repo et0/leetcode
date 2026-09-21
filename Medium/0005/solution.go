@@ -1,7 +1,5 @@
 package main // https://leetcode.com/problems/longest-palindromic-substring/description/
 
-import "fmt"
-
 func isPalindrom(s string) bool {
 	for i := 0; i < len(s)/2; i++ {
 		if s[i] != s[len(s)-1-i] {
@@ -50,9 +48,4 @@ func longestPalindrome(s string) string {
 	}
 
 	return s[max.left : max.right+1]
-}
-
-func main() {
-	//
-	fmt.Println(longestPalindrome("babad"))
 }

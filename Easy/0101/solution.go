@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -65,38 +63,4 @@ func recursively(left *TreeNode, right *TreeNode) bool {
 func isSymmetric(root *TreeNode) bool {
 	return iteratively(root)
 	// return recursively(root.Left, root.Right)
-}
-
-func main() {
-	tree := TreeNode{
-		Val: 1,
-		Left: &TreeNode{
-			Val: 2,
-			Left: &TreeNode{
-				Val:   3,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &TreeNode{
-				Val:   4,
-				Left:  nil,
-				Right: nil,
-			},
-		},
-		Right: &TreeNode{
-			Val: 2,
-			Left: &TreeNode{
-				Val:   3,
-				Left:  nil,
-				Right: nil,
-			},
-			Right: &TreeNode{
-				Val:   3,
-				Left:  nil,
-				Right: nil,
-			},
-		},
-	}
-
-	fmt.Println(isSymmetric(&tree))
 }

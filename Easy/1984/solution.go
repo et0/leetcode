@@ -1,7 +1,6 @@
 package main // https://leetcode.com/problems/minimum-difference-between-highest-and-lowest-of-k-scores/
 
 import (
-	"fmt"
 	"slices"
 )
 
@@ -23,8 +22,4 @@ func minimumDifference(nums []int, k int) int {
 	}
 
 	return minimum
-}
-
-func main() {
-	fmt.Println(minimumDifference([]int{20, 200, 300, 1000}, 3))
 }

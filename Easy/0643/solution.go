@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func findMaxAverage(nums []int, k int) float64 {
 	maxAverage := -10001.0
 	size := len(nums)
@@ -19,8 +17,4 @@ func findMaxAverage(nums []int, k int) float64 {
 	}
 
 	return maxAverage
-}
-
-func main() {
-	fmt.Println(findMaxAverage([]int{1, 12, -5, -6, 50, 3}, 50))
 }

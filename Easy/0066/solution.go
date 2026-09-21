@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func plusOne(digits []int) []int {
 	size := len(digits)
 	for i := size - 1; i >= 0; i-- {
@@ -18,8 +16,4 @@ func plusOne(digits []int) []int {
 	}
 
 	return digits
-}
-
-func main() {
-	fmt.Println(plusOne([]int{9, 2, 9}))
 }
