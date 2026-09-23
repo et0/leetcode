@@ -20,6 +20,7 @@
 | [0303](https://github.com/et0/leetcode/blob/master/Easy/0303/solution.go) | Много раз находить сумму элементов неизменяемого массива на отрезке от left до right | array, prefix sum, design |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |
 | [0345](https://github.com/et0/leetcode/blob/master/Easy/0345/solution.go) | Reverse only vowels in string | string, array, two pointers |
+| [0347](https://github.com/et0/leetcode/blob/master/Medium/0347/solution.go) | Найти k элементов, которые встречаются в массиве чаще всего | array, hash, bucket sort |
 | [0395](https://github.com/et0/leetcode/blob/master/Medium/0395/solution.go) | Найти самую длинную подстроку в которой каждый уникальный элемент встречается K и больше раз | string, sliding window, hash |
 | [0443](https://github.com/et0/leetcode/blob/master/Medium/0443/solution.go) | Сжать массив символов in-place, заменяя группы одинаковых символов на символ + количество (если count > 1), и вернуть новую длину | string, two pointers, RLE |
 | [0541](https://github.com/et0/leetcode/blob/master/Easy/0541/solution.go) | Реверс четных подотрезков длиной К | two pointers |
