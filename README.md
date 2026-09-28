@@ -8,6 +8,7 @@
 | [0013](https://github.com/et0/leetcode/blob/master/Easy/0013/solution.go) | Перевести римское число в целое | string, hash |
 | [0015](https://github.com/et0/leetcode/blob/master/Medium/0015/solution.go) | Найти все уникальные тройки чисел в массиве, сумма которых равна нулю | two pointers, sorting |
 | [0027](https://github.com/et0/leetcode/blob/master/Easy/0027/solution.go) | Удалить элемент из массива | two pointers |
+| [0036](https://github.com/et0/leetcode/blob/master/Medium/0036/solution.go) | Проверить, не нарушены ли правила судоку в частично заполненной доске 9x9 | matrix, hash |
 | [0049](https://github.com/et0/leetcode/blob/master/Medium/0049/solution.go) | Сгруппировать строки так, чтобы в каждой группе оказались анаграммы друг друга | hash, string, sorting |
 | [0146](https://github.com/et0/leetcode/blob/master/Medium/0146/solution.go) | Реализация LRU кеша со своей структурой двухсвязного списка. Новый элемент добавляется в начало списка, а самый старый остаётся в хвосте. | LRU, cache, linked list, doubly-linked list, map |
 | [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/solution.go) | Реализация стека через слайсы. Метод getMin(), возвращающий минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
