@@ -26,6 +26,7 @@
 | [0395](https://github.com/et0/leetcode/blob/master/Medium/0395/solution.go) | Найти самую длинную подстроку в которой каждый уникальный элемент встречается K и больше раз | string, sliding window, hash |
 | [0443](https://github.com/et0/leetcode/blob/master/Medium/0443/solution.go) | Сжать массив символов in-place, заменяя группы одинаковых символов на символ + количество (если count > 1), и вернуть новую длину | string, two pointers, RLE |
 | [0541](https://github.com/et0/leetcode/blob/master/Easy/0541/solution.go) | Реверс четных подотрезков длиной К | two pointers |
+| [0560](https://github.com/et0/leetcode/blob/master/Medium/0560/solution.go) | Посчитать, сколько непрерывных подмассивов имеют сумму ровно k | array, hash, prefix sum |
 | [0643](https://github.com/et0/leetcode/blob/master/Easy/0643/solution.go) | Найти непрерывный подмассив длиной К с максимальным средним значением | sliding window |
 | [1161](https://github.com/et0/leetcode/blob/master/Medium/1161/solution.go) | Поиск уровня с максимальной суммой на дереве | tree |
 | [1984](https://github.com/et0/leetcode/blob/master/Easy/1984/solution.go) | Поиск минимальной разницы между минимальным и максимальным элементами в подмножестве | sliding window, sorting, k | 
