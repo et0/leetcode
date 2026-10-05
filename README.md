@@ -7,6 +7,7 @@
 | [0011](https://github.com/et0/leetcode/blob/master/Medium/0011/solution.go) | Найти максимальный объём воды, который можно вместить между двумя линиями массива | two pointers |
 | [0013](https://github.com/et0/leetcode/blob/master/Easy/0013/solution.go) | Перевести римское число в целое | string, hash |
 | [0015](https://github.com/et0/leetcode/blob/master/Medium/0015/solution.go) | Найти все уникальные тройки чисел в массиве, сумма которых равна нулю | two pointers, sorting |
+| [0026](https://github.com/et0/leetcode/blob/master/Easy/0026/solution.go) | Удалить дубликаты из отсортированного массива на месте и вернуть число уникальных элементов | array, two pointers |
 | [0027](https://github.com/et0/leetcode/blob/master/Easy/0027/solution.go) | Удалить элемент из массива | two pointers |
 | [0036](https://github.com/et0/leetcode/blob/master/Medium/0036/solution.go) | Проверить, не нарушены ли правила судоку в частично заполненной доске 9x9 | matrix, hash |
 | [0049](https://github.com/et0/leetcode/blob/master/Medium/0049/solution.go) | Сгруппировать строки так, чтобы в каждой группе оказались анаграммы друг друга | hash, string, sorting |
