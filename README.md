@@ -20,7 +20,7 @@
 | [0205](https://github.com/et0/leetcode/blob/master/Easy/0205/solution.go) | Проверить, изоморфны ли две строки: можно ли, заменяя символы одной строки, получить другую | string, hash |
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины, сумма элементов которой равна или больше target | sliding window |
 | [0242](https://github.com/et0/leetcode/blob/master/Easy/0242/solution.go) | Проверить, является ли одна строка анаграммой другой | string, hash |
-| [0283](https://github.com/et0/leetcode/blob/master/Easy/0283/solution.go) | Переносит все нули в конец слайса, не меняя относительный порядок остальных элементов. Используется два указателя: один для сканирования, второй для позиции вставки. | two pointers |
+| [0283](https://github.com/et0/leetcode/blob/master/Easy/0283/solution.go) | Переместить все нули в конец массива на месте, сохранив относительный порядок остальных элементов | array, two pointers |
 | [0303](https://github.com/et0/leetcode/blob/master/Easy/0303/solution.go) | Много раз находить сумму элементов неизменяемого массива на отрезке от left до right | array, prefix sum, design |
 | [0344](https://github.com/et0/leetcode/blob/master/Easy/0344/solution.go) | Reverse string | string, array, two pointers |
 | [0345](https://github.com/et0/leetcode/blob/master/Easy/0345/solution.go) | Reverse only vowels in string | string, array, two pointers |
