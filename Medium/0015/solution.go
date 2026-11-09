@@ -4,50 +4,51 @@ import (
 	"slices"
 )
 
+// Идея: сортируем; фиксируем первое число one, а пару к нему ищем как в #167 — two с начала
+// остатка, three с конца, target равен -nums[one]. Если nums[one] больше нуля, дальше все
+// числа тоже положительные и ноль не набрать — выходим.
+// Дубли: one пропускает значения, равные предыдущему; после найденной тройки сдвигаем оба
+// указателя (при том же one новое значение two требует другого партнёра, со старым three
+// в ноль не сложится) и пропускаем повторы two и three.
+// Время: O(n^2) — до n значений one, для каждого внутренний проход O(n): зазор three-two
+// сужается на 1 за шаг, пропуски дублей тоже сдвигают указатели. Сортировка O(n log n) теряется.
+// Память: O(log n) дополнительно — стек pdqsort в slices.Sort, сортировка на месте; сам
+// алгоритм O(1). Ответ не считаем: троек бывает до O(n^2).
+// Ловушка: ветка "нашли" должна быть частью одной цепочки if / else if / else и сдвигать
+// оба указателя — иначе бесконечный цикл или повторы; условие для one — меньше или равно
+// нулю, иначе теряется [0,0,0].
 func threeSum(nums []int) [][]int {
-	result := [][]int{}
-
-	// Зачем сортировка?
-	// Чтобы использовать два указателя и легко пропускать дубликаты.
 	slices.Sort(nums)
 
-	// Почему фиксируем только до len(nums)-2?
-	// Потому что нужно минимум два элемента для left/right
-	for fix := 0; fix < len(nums)-2; fix++ {
-		// Если фикс. значение больше нуля, то дальше уже не получим сумму 0
-		if nums[fix] > 0 {
-			break
-		}
+	out := [][]int{}
 
-		// Если фикс. значение равно предыдущей попытке
-		if fix != 0 && nums[fix] == nums[fix-1] {
+	size := len(nums)
+	for one := 0; one < size && nums[one] <= 0; one++ {
+		if one > 0 && nums[one] == nums[one-1] {
 			continue
 		}
 
-		target := -nums[fix]
-		for left, right := fix+1, len(nums)-1; left < right; {
-			sum := nums[left] + nums[right]
+		for two, three := one+1, size-1; two < three; {
+			if nums[one]+nums[two]+nums[three] == 0 {
+				out = append(out, []int{nums[one], nums[two], nums[three]})
 
-			if sum == target {
-				result = append(result, []int{nums[fix], nums[left], nums[right]})
-				left++
-				right--
+				two++
+				three--
 
-				// Исключаем предыдущие дубли слева
-				for left < right && nums[left] == nums[left-1] {
-					left++
+				for two < three && nums[two] == nums[two-1] {
+					two++
 				}
-				// Исключаем предыдущие дубли справа
-				for left < right && nums[right] == nums[right+1] {
-					right--
+
+				for two < three && nums[three] == nums[three+1] {
+					three--
 				}
-			} else if nums[left]+nums[right] > nums[fix]*-1 {
-				right--
+			} else if nums[two]+nums[three] > -nums[one] {
+				three--
 			} else {
-				left++
+				two++
 			}
 		}
 	}
 
-	return result
+	return out
 }
