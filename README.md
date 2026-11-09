@@ -16,7 +16,7 @@
 | [0146](https://github.com/et0/leetcode/blob/master/Medium/0146/solution.go) | Реализация LRU кеша со своей структурой двухсвязного списка. Новый элемент добавляется в начало списка, а самый старый остаётся в хвосте. | LRU, cache, linked list, doubly-linked list, map |
 | [0155](https://github.com/et0/leetcode/blob/master/Medium/0155/solution.go) | Реализация стека через слайсы. Метод getMin(), возвращающий минимальный элемент в стеке (у каждого элемента свой минимум) | stack, slice |
 | [0165](https://github.com/et0/leetcode/blob/master/Medium/0165/solution.go) | Compare Version Numbers: Сравнить две строки-версии, разбив их по точкам на числовые компоненты и сравнив по порядку (недостающие = 0), вернув -1, 0 или 1 | string, two pointers |
-| [0167](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Найти элементы, которые дают нужную сумму в отсортированном слайсе. Используется метод двух указателей (сужение диапазона) за O(n). | array, two pointers |
+| [0167](https://github.com/et0/leetcode/blob/master/Medium/0167/solution.go) | Найти в отсортированном массиве два разных элемента с суммой target и вернуть их индексы с нумерацией от 1. | array, two pointers |
 | [0205](https://github.com/et0/leetcode/blob/master/Easy/0205/solution.go) | Проверить, изоморфны ли две строки: можно ли, заменяя символы одной строки, получить другую | string, hash |
 | [0209](https://github.com/et0/leetcode/blob/master/Medium/0209/solution.go) | Найти подстроку минимальной длины, сумма элементов которой равна или больше target | sliding window |
 | [0242](https://github.com/et0/leetcode/blob/master/Easy/0242/solution.go) | Проверить, является ли одна строка анаграммой другой | string, hash |
